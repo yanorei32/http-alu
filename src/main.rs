@@ -19,8 +19,8 @@ fn dec_u16(s: &[u8]) -> Result<u16, ()> {
     for b in s {
         n <<= 1;
         match b {
-            b'0' => {}
-            b'1' => n |= 1,
+            b'0' | b'L' => {}
+            b'1' | b'H' => n |= 1,
             _ => return Err(()),
         }
     }
