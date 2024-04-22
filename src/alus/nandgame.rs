@@ -73,7 +73,7 @@ pub fn alu(input: &Input) -> Output {
 
     // Condition
     let eq = r == 0;
-    let lt = r | 0x8000 != 0;
+    let lt = r & 0x8000 != 0;
     let gt = !lt && !eq;
 
     let lt = input.i.contains(Instruction::COND_LT) && lt;
