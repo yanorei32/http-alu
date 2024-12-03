@@ -21,7 +21,7 @@ RUN cargo build --release
 COPY src/ /usr/src/http-alu/src/
 RUN touch src/**/* src/* && cargo build --release
 
-FROM debian:bookworm-slim@sha256:911821c26cc366231183098f489068afff2d55cf56911cb5b7bd32796538dfe1
+FROM debian:bookworm-slim@sha256:b73bf02f32434c9be21adf83b9aedf33e731784d8d2dacbbd3ce5f4993f2a2de
 
 WORKDIR /
 
