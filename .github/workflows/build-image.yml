@@ -35,7 +35,7 @@ jobs:
 
 
       - name: Build and Push
-        uses: docker/build-push-action@v6.16.0
+        uses: docker/build-push-action@v6.17.0
         if: "! startsWith(github.ref, 'refs/pull/')"
         with:
           context: .
@@ -47,7 +47,7 @@ jobs:
             ghcr.io/yanorei32/http-alu:${{ steps.tagname.outputs.version }}
 
       - name: Build and Push
-        uses: docker/build-push-action@v6.16.0
+        uses: docker/build-push-action@v6.17.0
         if: "startsWith(github.ref, 'refs/pull/')"
         with:
           context: .
