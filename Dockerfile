@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.17
-FROM rust:1.87.0-bookworm as build-env
+FROM rust:1.88.0-bookworm as build-env
 LABEL maintainer="yanorei32"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
