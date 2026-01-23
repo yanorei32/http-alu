@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.20
+# syntax=docker/dockerfile:1.21
 FROM rust:1.93.0-bookworm as build-env
 LABEL maintainer="yanorei32"
 
